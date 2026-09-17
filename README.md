@@ -61,7 +61,7 @@ The dataset was divided using a stratified split:
 
 A fixed random seed (`42`) was used to support reproducibility.
 
-**Results**
+## Results
 
 --- | Metric                 |     Result |
 | ---------------------- | ---------: |
@@ -72,7 +72,7 @@ A fixed random seed (`42`) was used to support reproducibility.
 | No Impairment F1       | **0.9737** |
 
 
-**Per-Class Performance**
+## Per-Class Performance
 
 
 | Metric                 |     Result |
@@ -83,7 +83,7 @@ A fixed random seed (`42`) was used to support reproducibility.
 | Moderate Impairment F1 | **0.9604** |
 | No Impairment F1       | **0.9737** |
 
-**Visualisations**
+## Visualisations
 
 The project includes visualisations of:
 
@@ -95,7 +95,7 @@ ROC curves
 
 These visualisations were used to assess class imbalance, training behaviour and model performance.
 
-**Key Findings**
+## Key Findings
 The CNN achieved 96.85% test accuracy.
 Performance remained high across all three classes.
 Moderate Impairment achieved 100% recall.
@@ -105,7 +105,7 @@ Early stopping and dropout were used to reduce overfitting.
 Class weighting was used to address the imbalance between severity categories.
 Limitations
 
-**Several limitations should be considered when interpreting the results:**
+## Several limitations should be considered when interpreting the results:
 
 The dataset is relatively modest compared with large-scale neuroimaging datasets.
 The dataset originated from a single source, limiting assessment of generalisation across clinical settings.
@@ -115,7 +115,7 @@ The model has not been externally validated on an independent multi-centre datas
 CNN predictions are not inherently interpretable, which may limit clinical transparency.
 
 
-**Future Work**
+## Future Work
 
 Potential improvements include:
 
