@@ -63,7 +63,7 @@ A fixed random seed (`42`) was used to support reproducibility.
 
 ## Results
 
---- | Metric                 |     Result |
+| Metric                 |     Result |
 | ---------------------- | ---------: |
 | Test Accuracy          | **96.85%** |
 | Weighted F1-score      | **96.85%** |
@@ -75,13 +75,12 @@ A fixed random seed (`42`) was used to support reproducibility.
 ## Per-Class Performance
 
 
-| Metric                 |     Result |
-| ---------------------- | ---------: |
-| Test Accuracy          | **96.85%** |
-| Weighted F1-score      | **96.85%** |
-| Mild Impairment F1     | **0.9646** |
-| Moderate Impairment F1 | **0.9604** |
-| No Impairment F1       | **0.9737** |
+| Class               | Precision |     Recall |   F1-score |
+| ------------------- | --------: | ---------: | ---------: |
+| Mild Impairment     |    0.9664 |     0.9628 |     0.9646 |
+| Moderate Impairment |    0.9237 | **1.0000** |     0.9604 |
+| No Impairment       |    0.9840 |     0.9635 | **0.9737** |
+
 
 ## Visualisations
 
