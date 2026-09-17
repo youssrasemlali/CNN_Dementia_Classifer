@@ -61,6 +61,68 @@ The dataset was divided using a stratified split:
 
 A fixed random seed (`42`) was used to support reproducibility.
 
---- 
+**Results**
+
+--- | Metric                 |     Result |
+| ---------------------- | ---------: |
+| Test Accuracy          | **96.85%** |
+| Weighted F1-score      | **96.85%** |
+| Mild Impairment F1     | **0.9646** |
+| Moderate Impairment F1 | **0.9604** |
+| No Impairment F1       | **0.9737** |
 
 
+**Per-Class Performance**
+
+
+| Metric                 |     Result |
+| ---------------------- | ---------: |
+| Test Accuracy          | **96.85%** |
+| Weighted F1-score      | **96.85%** |
+| Mild Impairment F1     | **0.9646** |
+| Moderate Impairment F1 | **0.9604** |
+| No Impairment F1       | **0.9737** |
+
+**Visualisations**
+
+The project includes visualisations of:
+
+Class distribution
+Example MRI images
+Training and validation accuracy/loss
+Normalised confusion matrix
+ROC curves
+
+These visualisations were used to assess class imbalance, training behaviour and model performance.
+
+**Key Findings**
+The CNN achieved 96.85% test accuracy.
+Performance remained high across all three classes.
+Moderate Impairment achieved 100% recall.
+Classification errors primarily occurred between Mild and No Impairment.
+Training and validation curves showed stable convergence.
+Early stopping and dropout were used to reduce overfitting.
+Class weighting was used to address the imbalance between severity categories.
+Limitations
+
+**Several limitations should be considered when interpreting the results:**
+
+The dataset is relatively modest compared with large-scale neuroimaging datasets.
+The dataset originated from a single source, limiting assessment of generalisation across clinical settings.
+The model uses 2D MRI slices rather than full 3D brain volumes.
+The dataset contained class imbalance despite the use of class weighting.
+The model has not been externally validated on an independent multi-centre dataset.
+CNN predictions are not inherently interpretable, which may limit clinical transparency.
+
+
+**Future Work**
+
+Potential improvements include:
+
+External validation using multi-centre MRI datasets.
+Data augmentation to increase training variability.
+Transfer learning using pre-trained CNN architectures.
+Investigation of 3D CNN architectures using volumetric MRI data.
+Evaluation on more diverse patient populations.
+Integration of explainability methods such as saliency maps.
+Comparison with alternative deep learning architectures.
